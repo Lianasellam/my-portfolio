@@ -11,21 +11,21 @@ document.addEventListener("DOMContentLoaded", function() {
     const resumeSection = `
         <section id="resume">
             <h2>Resume</h2>
-            <p>Details of your education and experience.</p>
+            <p>UNSW Aerospace Engineering with Honours.</p>
         </section>
     `;
 
     const projectsSection = `
         <section id="projects">
             <h2>Projects</h2>
-            <p>Descriptions of your projects.</p>
+            <p>Coming Soon.</p>
         </section>
     `;
 
     const contactSection = `
         <section id="contact">
             <h2>Contact</h2>
-            <p>How to get in touch with you.</p>
+            <p>Email me at liana.sellam@hotmail.com.</p>
         </section>
     `;
 

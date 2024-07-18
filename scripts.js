@@ -18,6 +18,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const projectsSection = `
         <section id="projects">
             <h2>Projects</h2>
+            <div class="project">
+                <img src="Images/IMG_1401.png" alt="Project 1">
+                <p>Project 1 description.</p>
+            </div>
             <p>Coming Soon.</p>
         </section>
     `;
@@ -25,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const contactSection = `
         <section id="contact">
             <h2>Contact</h2>
-            <p> Email: liana.sellam@hotmail.com.</p>
+            <p>Email: liana.sellam@hotmail.com</p>
         </section>
     `;
 

@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <h2>Projects</h2>
             <div class="project">
                 <img src="Images/IMG_1401.png" alt="Project 1">
-                <p>Pulsed light with a 3D printed chopper.</p>
+                <p>Pulsed light with a 3D printed chopper: I used a Raspberry Pico with a motor and created pulses through the 100 slots of the blade.</p>
             </div>
             <p>Coming Soon.</p>
         </section>

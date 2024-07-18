@@ -7,8 +7,9 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #00008B; /* Dark Blue */
+    /* Alternatively, you can use electric blue with background-color: #7DF9FF; */
+    color: white;
     padding: 1rem;
     text-align: center;
 }
@@ -24,7 +25,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: white; /* Ensure the text in the nav is visible */
     text-decoration: none;
 }
 
@@ -49,5 +50,12 @@ section {
 }
 
 footer {
-    background-color: #333
+    background-color: #00008B;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
 

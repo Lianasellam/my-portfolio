@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const aboutSection = `
         <section id="about">
             <h2>About Me</h2>
-            <p>A brief description about yourself.</p>
+            <p>Hi.</p>
         </section>
     `;
 

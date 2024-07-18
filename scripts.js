@@ -4,14 +4,19 @@ document.addEventListener("DOMContentLoaded", function() {
     const aboutSection = `
         <section id="about">
             <h2>About Me</h2>
-            <p>Hi.</p>
+            <p>Hi, I am a French American freshly graduated Aerospace Engineer living in Sydney.</p>
         </section>
     `;
 
     const resumeSection = `
         <section id="resume">
             <h2>Resume</h2>
-            <p>UNSW Aerospace Engineering with Honours.</p>
+            <p>Bachelor of Aerospace Engineering (Honours), University of New South Wales (UNSW), June 2024</p>
+            <p>Relevant Coursework: Financial Engineering, Statistical Analysis, Advanced Programming</p>
+            <p>Thesis: IR Device and Website Development for Sports Bar TV Channel Automation</p>
+            <p>Award: Warwick Slade Royal Aeronautical Society Prize 2022</p>
+            <p>Activities: Outreach Director, UNSW Aerospace Society</p>
+            
         </section>
     `;
 

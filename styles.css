@@ -30,7 +30,7 @@ body {
 #landing-page button {
     padding: 10px 20px;
     font-size: 1.2rem;
-    background-color: #00008B; /* Dark Blue */
+    background-color: black; 
     color: white;
     border: none;
     cursor: pointer;
@@ -83,7 +83,7 @@ section {
 }
 
 footer {
-    background-color: #333;
+    background-color: black;
     color: #fff;
     text-align: center;
     padding: 1rem;

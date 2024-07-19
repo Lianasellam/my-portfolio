@@ -7,27 +7,45 @@ body {
 }
 
 #landing-page {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+#landing-content {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     text-align: center;
-    background: url('Images/landing-background.png') no-repeat center center/cover;
     color: white;
 }
 
-#landing-page h1 {
+#landing-content h1 {
     margin-bottom: 20px;
     font-size: 2.5rem;
 }
 
-#landing-page p {
+#landing-content p {
     margin-bottom: 20px;
     font-size: 1.2rem;
 }
 
-#landing-page button {
+#landing-content button {
     padding: 10px 20px;
     font-size: 1.2rem;
     background-color: black; 
@@ -36,12 +54,12 @@ body {
     cursor: pointer;
 }
 
-#landing-page button:hover {
-    background-color: #7DF9FF; /* Electric Blue */
+#landing-content button:hover {
+    background-color: black; 
 }
 
 header {
-    background-color: black; /* Dark Blue */
+    background-color: black; 
     color: white;
     padding: 1rem;
     text-align: center;
@@ -91,4 +109,3 @@ footer {
     width: 100%;
     bottom: 0;
 }
-

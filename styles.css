@@ -1,61 +1,53 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: black; /* Set the background color to black */
-    color: white; /* Set the text color to white for contrast */
-}
+document.addEventListener("DOMContentLoaded", function() {
+    const enterButton = document.getElementById('enter-button');
+    const landingPage = document.getElementById('landing-page');
+    const mainContent = document.getElementById('main-content');
+    const content = document.getElementById('content');
 
-header {
-    background-color: #00008B; /* Dark Blue */
-    /* Alternatively, you can use electric blue with background-color: #7DF9FF; */
-    color: white;
-    padding: 1rem;
-    text-align: center;
-}
+    enterButton.addEventListener('click', function() {
+        landingPage.style.display = 'none';
+        mainContent.style.display = 'block';
+        loadMainContent();
+    });
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
+    function loadMainContent() {
+        const aboutSection = `
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Hi.</p>
+            </section>
+        `;
 
-nav ul li {
-    display: inline;
-    margin: 0 1rem;
-}
+        const resumeSection = `
+            <section id="resume">
+                <h2>Resume</h2>
+                <p>Bachelor of Aerospace Engineering (Honours), University of New South Wales (UNSW), June 2024</p>
+                <p>Relevant Coursework: Financial Engineering, Statistical Analysis, Advanced Programming</p>
+                <p>Thesis: IR Device and Website Development for Sports Bar TV Channel Automation</p>
+                <p>Award: Warwick Slade Royal Aeronautical Society Prize 2022</p>
+                <p>Activities: Outreach Director, UNSW Aerospace Society</p>
+            </section>
+        `;
 
-nav ul li a {
-    color: white; /* Ensure the text in the nav is visible */
-    text-decoration: none;
-}
+        const projectsSection = `
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="project">
+                    <img src="Images/IMG_1401.png" alt="Project 1">
+                    <p>Pulsed light with a 3D printed chopper: I used a Raspberry Pico with a motor and created pulses through the 100 slots of the blade.</p>
+                </div>
+                <p>Coming Soon.</p>
+            </section>
+        `;
 
-main {
-    padding: 2rem;
-}
+        const contactSection = `
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Email: liana.sellam@hotmail.com</p>
+            </section>
+        `;
 
-section {
-    margin-bottom: 40px;
-}
-
-.project {
-    margin: 20px 0;
-}
-
-.project img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-footer {
-    background-color: #00008B;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
+        content.innerHTML = aboutSection + resumeSection + projectsSection + contactSection;
+    }
+});
 

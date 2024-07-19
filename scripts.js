@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const aboutSection = `
             <section id="about">
                 <h2>About Me</h2>
-                <img src="Images/your-photo.png" alt="Liana McMillan Sellam">
+                <img src="your-photo.png" alt="Liana McMillan Sellam">
                 <p>Hi, I'm a recent graduate from UNSW with a bachelor's degree in aerospace engineering.</p>
                 <p>I have one year of work experience and dual French and American citizenship.</p>
                 <p>In addition to my engineering background, I have taken courses in data modeling and enjoy playing games like poker and chess.</p>

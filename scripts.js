@@ -24,12 +24,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 <h2>My Journey</h2>
                 <div class="timeline">
                     <div class="event">
-                        <h3>2017-2019: Master Degree - University</h3>
-                        <p>Description of your degree and activities.</p>
+                        <h3>2019-2024: Bachelor of Engineering in Aerospace (honours) - University of New South Wales</h3>
+                         <p>Relevant Coursework: Financial Engineering, Statistical Analysis, Advanced Programming</p>
+                         <p>Thesis: IR Device and Website Development for Sports Bar TV Channel Automation</p>
+                         <p>Award: Warwick Slade Royal Aeronautical Society Prize 2022</p>
+                         <p>Activities: Outreach Director, UNSW Aerospace Society</p>
                     </div>
                     <div class="event">
-                        <h3>2019-2020: Web Developer - Company</h3>
-                        <p>Description of your job and responsibilities.</p>
+                        <h3>2023: Space Intern - Vidi Astra</h3>
+                        <p>R&D for Space based LiDAR.</p>
                     </div>
                     <!-- Add more events as needed -->
                 </div>

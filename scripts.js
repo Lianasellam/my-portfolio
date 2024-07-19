@@ -92,6 +92,14 @@ document.addEventListener("DOMContentLoaded", function() {
         `;
 
         content.innerHTML = aboutSection + journeySection + skillsSection + contactSection;
+
+        // Attach event listeners for tabs after content is loaded
+        const tabLinks = document.querySelectorAll('.tab-link');
+        tabLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                openTab(event, this.getAttribute('onclick').split("'")[1]);
+            });
+        });
     }
 });
 
@@ -109,5 +117,4 @@ function openTab(evt, tabName) {
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 }
-
-           
+         

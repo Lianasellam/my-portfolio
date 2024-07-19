@@ -48,18 +48,18 @@ body {
 #landing-content button {
     padding: 10px 20px;
     font-size: 1.2rem;
-    background-color: #00008B; /* Dark Blue */
+    background-color: black; 
     color: white;
     border: none;
     cursor: pointer;
 }
 
 #landing-content button:hover {
-    background-color: #7DF9FF; /* Electric Blue */
+    background-color: black; 
 }
 
 header {
-    background-color: #00008B; /* Dark Blue */
+    background-color: black; 
     color: white;
     padding: 1rem;
     text-align: center;
@@ -97,7 +97,7 @@ section {
 }
 
 footer {
-    background-color: #333;
+    background-color: black;
     color: #fff;
     text-align: center;
     padding: 1rem;
@@ -128,7 +128,7 @@ footer {
 
 #skills .skills-list .skill .skill-bar {
     width: 70%;
-    background-color: #4CAF50;
+    background-color: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     height: 20px;
     border-radius: 4px;
 }
@@ -139,14 +139,14 @@ footer {
 
 #contact .contact-form button {
     padding: 10px;
-    background-color: #00008B;
+    background-color: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     border: none;
     color: white;
     cursor: pointer;
 }
 
 #contact .contact-form button:hover {
-    background-color: #7DF9FF;
+    background-color: black;
 }
 
 

@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0e0e0e; /* Dark background */
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Dark blue gradient background */
     color: #ffffff; /* White text color */
 }
 
@@ -64,6 +64,12 @@ body {
     background-color: #7DF9FF; /* Electric Blue */
 }
 
+#main-content {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Same dark blue gradient as landing page */
+    color: white;
+    min-height: 100vh;
+}
+
 header {
     background-color: #00008B; /* Dark Blue */
     color: white;
@@ -93,7 +99,7 @@ main {
 section {
     margin-bottom: 40px;
     padding: 2rem;
-    background-color: #1a1a1a; /* Slightly lighter background */
+    background-color: rgba(26, 26, 26, 0.8); /* Slightly transparent background */
     border-radius: 8px;
 }
 
@@ -153,4 +159,33 @@ footer {
 
 #contact .contact-form button:hover {
     background-color: #7DF9FF;
+}
+
+/* Tabbed interface styles */
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tabs button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+.tabs button:hover, .tabs button.active {
+    border-bottom: 2px solid #7DF9FF; /* Electric Blue */
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
 }

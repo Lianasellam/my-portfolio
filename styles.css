@@ -2,14 +2,20 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: black; /* Set the background color to black */
-    color: white; /* Set the text color to white for contrast */
+    background-color: #0e0e0e; /* Dark background */
+    color: #ffffff; /* White text color */
 }
 
 #landing-page {
     position: relative;
     height: 100vh;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
 }
 
 #background-video {
@@ -48,18 +54,18 @@ body {
 #landing-content button {
     padding: 10px 20px;
     font-size: 1.2rem;
-    background-color: black; 
+    background-color: #00008B; /* Dark Blue */
     color: white;
     border: none;
     cursor: pointer;
 }
 
 #landing-content button:hover {
-    background-color: black; 
+    background-color: #7DF9FF; /* Electric Blue */
 }
 
 header {
-    background-color: black; 
+    background-color: #00008B; /* Dark Blue */
     color: white;
     padding: 1rem;
     text-align: center;
@@ -86,26 +92,65 @@ main {
 
 section {
     margin-bottom: 40px;
+    padding: 2rem;
+    background-color: #1a1a1a; /* Slightly lighter background */
+    border-radius: 8px;
 }
 
-.project {
-    margin: 20px 0;
-}
-
-.project img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+#about img {
+    width: 150px;
+    border-radius: 50%;
 }
 
 footer {
-    background-color: black;
+    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 1rem;
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* Additional styles for new sections */
+#skills .skills-list, #journey .timeline, #contact .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#skills .skills-list .skill, #journey .timeline .event, #contact .contact-form input, #contact .contact-form textarea {
+    background-color: #2a2a2a;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+
+#skills .skills-list .skill {
+    display: flex;
+    justify-content: space-between;
+}
+
+#skills .skills-list .skill .skill-bar {
+    width: 70%;
+    background-color: #4CAF50;
+    height: 20px;
+    border-radius: 4px;
+}
+
+#contact .contact-form input, #contact .contact-form textarea {
+    width: 100%;
+}
+
+#contact .contact-form button {
+    padding: 10px;
+    background-color: #00008B;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#contact .contact-form button:hover {
+    background-color: #7DF9FF;
 }

@@ -14,39 +14,68 @@ document.addEventListener("DOMContentLoaded", function() {
         const aboutSection = `
             <section id="about">
                 <h2>About Me</h2>
-                <p>Hi, I am a US & French freshly Graduate Aerospace Engineer living in Sydney.</p>
+                <img src="Images/your-photo.png" alt="Liana McMillan Sellam">
+                <p>Hi, I'm Liana McMillan Sellam, an aerospace engineer with a passion for innovation and technology. Welcome to my portfolio!</p>
             </section>
         `;
 
-        const resumeSection = `
-            <section id="resume">
-                <h2>Resume</h2>
-                <p>Bachelor of Aerospace Engineering (Honours), University of New South Wales (UNSW), June 2024</p>
-                <p>Relevant Coursework: Financial Engineering, Statistical Analysis, Advanced Programming</p>
-                <p>Thesis: IR Device and Website Development for Sports Bar TV Channel Automation</p>
-                <p>Award: Warwick Slade Royal Aeronautical Society Prize 2022</p>
-                <p>Activities: Outreach Director, UNSW Aerospace Society</p>
-            </section>
-        `;
-
-        const projectsSection = `
-            <section id="projects">
-                <h2>Projects</h2>
-                <div class="project">
-                    <img src="Images/IMG_1401.png" alt="Project 1">
-                    <p>Pulsed light with a 3D printed chopper: I used a Raspberry Pico with a motor and created pulses through the 100 slots of the blade.</p>
+        const journeySection = `
+            <section id="journey">
+                <h2>My Journey</h2>
+                <div class="timeline">
+                    <div class="event">
+                        <h3>2017-2019: Master Degree - University</h3>
+                        <p>Description of your degree and activities.</p>
+                    </div>
+                    <div class="event">
+                        <h3>2019-2020: Web Developer - Company</h3>
+                        <p>Description of your job and responsibilities.</p>
+                    </div>
+                    <!-- Add more events as needed -->
                 </div>
-                <p>Coming Soon.</p>
+            </section>
+        `;
+
+        const skillsSection = `
+            <section id="skills">
+                <h2>My Skills</h2>
+                <div class="skills-list">
+                    <div class="skill">
+                        <span>HTML</span>
+                        <div class="skill-bar" style="width: 90%;"></div>
+                    </div>
+                    <div class="skill">
+                        <span>CSS</span>
+                        <div class="skill-bar" style="width: 80%;"></div>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="skill-bar" style="width: 75%;"></div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="skill-bar" style="width: 70%;"></div>
+                    </div>
+                    <!-- Add more skills as needed -->
+                </div>
             </section>
         `;
 
         const contactSection = `
             <section id="contact">
-                <h2>Contact</h2>
-                <p>Email: liana.sellam@hotmail.com</p>
+                <h2>Contact Me</h2>
+                <form class="contact-form">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email Address">
+                    <input type="text" placeholder="Mobile Number">
+                    <input type="text" placeholder="Email Subject">
+                    <textarea placeholder="Your Message"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
             </section>
         `;
 
-        content.innerHTML = aboutSection + resumeSection + projectsSection + contactSection;
+        content.innerHTML = aboutSection + journeySection + skillsSection + contactSection;
     }
 });
+

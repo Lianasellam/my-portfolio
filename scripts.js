@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const aboutSection = `
             <section id="about">
                 <h2>About Me</h2>
-                <p>Hi.</p>
+                <p>Hi, I am a US & French freshly Graduate Aerospace Engineer living in Sydney.</p>
             </section>
         `;
 
@@ -50,4 +50,3 @@ document.addEventListener("DOMContentLoaded", function() {
         content.innerHTML = aboutSection + resumeSection + projectsSection + contactSection;
     }
 });
-

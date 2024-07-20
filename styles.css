@@ -182,6 +182,11 @@ body, html {
     background-color: #00bfff;
 }
 
+.projects img {
+    width: 400px;
+    height: 300px;
+}
+
 /* Modified contact form styles */
 .contact-me {
     width: 80%;
@@ -238,6 +243,18 @@ button {
 button:hover {
     background-color: #0080ff;
 }
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-field {
+        width: 100%;
+    }
+}
+
 
 
 

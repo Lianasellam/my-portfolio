@@ -1,152 +1,242 @@
-body {
-    font-family: Arial, sans-serif;
+body, html {
     margin: 0;
     padding: 0;
-    background-color: #0e0e0e; /* Dark background */
-    color: #ffffff; /* White text color */
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    background-color: black;
+    color: #fff;
 }
 
-#landing-page {
-    position: relative;
+.section {
     height: 100vh;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-#background-video {
+#section1 {
+    position: relative;
+}
+
+.video-background {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 80%;
+    height: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.video-background video {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transform: translate(-50%, -50%);
-    z-index: -1;
 }
 
-#landing-content {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+.enter-button {
+    position: absolute;
+    bottom: 20px;
     text-align: center;
-    color: white;
+    width: 100%;
 }
 
-#landing-content h1 {
-    margin-bottom: 20px;
-    font-size: 2.5rem;
-}
-
-#landing-content p {
-    margin-bottom: 20px;
-    font-size: 1.2rem;
-}
-
-#landing-content button {
+.enter-button a {
+    color: #00bfff;
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid #00bfff;
     padding: 10px 20px;
-    font-size: 1.2rem;
-    background-color: black; 
-    color: white;
-    border: none;
-    cursor: pointer;
+    border-radius: 5px;
 }
 
-#landing-content button:hover {
-    background-color: black; 
+.about-me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
 }
 
-header {
-    background-color: black; 
-    color: white;
-    padding: 1rem;
+.about-me img {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.about-text h2 {
+    font-size: 28px;
+    color: #00bfff;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    color: #00bfff;
+    text-decoration: none;
+    border: 2px solid #00bfff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#section3, #section4, #section5, #section6 {
+    width: 100%;
     text-align: center;
+    background-color: black; /* Dark blue background for all sections */
 }
 
-nav ul {
+.timeline {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.timeline-column {
+    width: 45%;
+}
+
+.timeline-item {
+    background-color: #1e2a38; /* Dark blue shade for timeline items */
+    border: 1px solid #00bfff;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.timeline-item h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.timeline-item p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.timeline-item ul {
     list-style-type: none;
     padding: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 1rem;
+.timeline-item ul li {
+    font-size: 14px;
+    margin-bottom: 5px;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
+.skills-container {
+    width: 120%;
+    margin: 10px;
+    text-align: left;
+    display: flex;
+    justify-content: 100px;
 }
 
-main {
-    padding: 2rem;
+.skills-column {
+    width: 1000%;
 }
 
-section {
-    margin-bottom: 40px;
-    padding: 2rem;
-    background-color: #1a1a1a; /* Slightly lighter background */
-    border-radius: 8px;
+.skills-column h3 {
+    margin-bottom: 10px;
 }
 
-#about img {
-    width: 150px;
-    border-radius: 50%;
+.skill {
+    margin-bottom: 20px;
 }
 
-footer {
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+.skill p {
+    display: flex;
+    justify-content: 100px;
+    margin: 20px;
+    font-size: 16px;
 }
 
-/* Additional styles for new sections */
-#skills .skills-list, #journey .timeline, #contact .contact-form {
+.progress {
+    background-color: #1e2a38;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+    margin-top: 5px;
+    width: 300px; 
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #00bfff;
+}
+
+/* Modified contact form styles */
+.contact-me {
+    width: 80%;
+    max-width: 800px;
+}
+
+form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    width: 100%;
+    margin: 0 auto;
 }
 
-#skills .skills-list .skill, #journey .timeline .event, #contact .contact-form input, #contact .contact-form textarea {
-    background-color: #2a2a2a;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    color: white;
-}
-
-#skills .skills-list .skill {
-    display: flex;
-    justify-content: space-between;
-}
-
-#skills .skills-list .skill .skill-bar {
-    width: 70%;
-    background-color: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    height: 20px;
-    border-radius: 4px;
-}
-
-#contact .contact-form input, #contact .contact-form textarea {
+.form-group {
     width: 100%;
 }
 
-#contact .contact-form button {
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-field {
+    width: 48%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea, button {
+    width: 100%;
     padding: 10px;
-    background-color: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    font-size: 16px;
+    border: 1px solid #00bfff;
+    border-radius: 5px;
+    background-color: #1e2a38;
+    color: #fff;
+}
+
+button {
+    margin-top: 10px;
+    background-color: #00bfff;
     border: none;
-    color: white;
     cursor: pointer;
 }
 
-#contact .contact-form button:hover {
-    background-color: black;
+button:hover {
+    background-color: #0080ff;
 }
 
 

@@ -1,50 +1,234 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liana McMillan Sellam - Portfolio</title>
+    <title>Liana McMillan Sellam's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Landing Page -->
-    <div id="landing-page">
-        <video autoplay muted loop id="background-video">
-            <source src="background.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div id="landing-content">
-            <h1>Welcome</h1>
-            <p>My portfolio is currently in construction</p>
-            <button id="enter-button">Enter</button>
+    <div class="section" id="section1">
+        <div class="video-background">
+             <video autoplay muted loop id="background-video">
+                <source src="annimation.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="enter-button">
+            <a href="#section2">Enter</a>
         </div>
     </div>
-
-    <!-- Main Content -->
-    <div id="main-content" style="display:none;">
-        <header>
-            <h1>Liana McMillan Sellam</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#journey">My Journey</a></li>
-                    <li><a href="#skills">My Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main id="content">
-            <!-- Content will be dynamically inserted here -->
-        </main>
-        <footer>
-            <p>&copy; 2024 Liana McMillan Sellam. All rights reserved.</p>
-        </footer>
+    <div class="section" id="section2">
+        <div class="about-me">
+            <img src="Images/headshot.png" alt="Liana's Picture">
+            <div class="about-text">
+                <h1>Hi, I'm Liana McMillan Sellam</h1>
+                <h2>Graduated Aerospace Engineer (Honours)</h2>
+                <p>I'm a recent graduate from UNSW with a bachelor's degree in aerospace engineering.
+                    I have one year of work experience and dual French and American citizenship.
+                    In addition to my engineering background, I have taken courses in data modeling 
+                    and enjoy playing games like poker and chess. Currently, I am based in Sydney, 
+                    working as a Mission Space Manager for a space edge computing company.
+                </p>
+                <div class="buttons">
+                    <a href="mailto:email@example.com" class="button">Email Me</a>
+                    <a href="resume.pdf" class="button">Resume</a>
+                    <a href="portfolio.pdf" class="button">Portfolio</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <script src="scripts.js"></script>
+    <div class="section" id="section3">
+        <div class="my-journey">
+            <h2>My Journey</h2>
+            <div class="timeline">
+                <div class="timeline-column">
+                    <h3>Education</h3>
+                    <div class="timeline-item">
+                        <h4>Sep2019 - Apr 2024</h4>
+                        <p>Bachelor's of Engineering (Honours) - Aerospace, UNSW Kensington Campus</p>
+                        <ul>
+                            <li>Relevant Coursework: Financial Engineering, Statistical Analysis, Advanced Programming</li>
+                            <li>Thesis: IR Device and Website Development for Sports Bar TV Channel Automation</li>
+                            <li>Award: Warwick Slade Royal Aeronautical Society Prize 2022</li>
+                            <li>Activities: Outreach Director, UNSW Aerospace Society</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>2023 - 2024</h4>
+                        <p>Online Courses</p>
+                        <ul> 
+                            <li> Finance & Quantitative Modeling for Analysts (UPEN) - Coursera</li>
+                            <li> Introduction to Mathematical Thinking (Stanford) - Coursera</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>2014-2017</h4>
+                        <p>College Sevigne, Paris, France</p>
+                        <ul> 
+                            <li> French Baccalaureate in Science with honors (Majored in Physics and Maths)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-column">
+
+                    <h3>Experience</h3>
+                    <div class="timeline-item">
+                        <h4>May 2024 - Present</h4>
+                        <p>Spiral Blue, Sydney Australia - Mission Manager</p>
+                        <ul>
+                            <li>Managed Earth Observation projects, utilizing satellite imagery for client solutions.</li>
+                            <li>Conducted market research and applied for grants to expand US operations.</li>
+                            <li>Designed thermal systems for Space Edge Computers, improving performance.</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Oct 2023 - Apr 2024</h4>
+                        <p>Vidi Astra, Sydney Australia - Space Engineer</p>
+                        <ul> 
+                            <li>Directed the design and technical implementation of LiDAR systems for satellites.</li>
+                            <li>Engaged with industry leaders and potential investors to drive innovation.</li>
+                            <li>Led recruitment and oversaw interns in electrical engineering and circuit processing.</li>
+                            <li>Assisted in developing space-borne LiDAR technology for remote sensing applications.</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>2018 - 2019</h4>
+                        <p>FOCUS4COMMUNICATIONS</p>
+                        <ul> 
+                            <li>Assisted in client meetings, developing client-facing documents and presentations. - Intern</li>
+                            <li>Conducted market research to support communication strategies.</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>June 2015 - Aug 2015</h4>
+                        <p>Engineering Consulting Group (ECG), Cairo Egypt - Intern</p>
+                        <ul> 
+                            <li>ACollaborated on design projects, utilizing software for space planning and material selection.</li>
+                            <li>Contributed creative ideas in brainstorming sessions.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section4">
+        <div class="my-skills">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skills-column">
+                    <h3>Coding Skills</h3>
+                    <div class="skill">
+                        <p>HTML <span>90%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>CSS <span>80%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>JavaScript <span>65%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>Python <span>75%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-column">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <p>CAD <span>95%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>SQL <span>67%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 67%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>Project Dev<span>85%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <p>CNC <span>60%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section5">
+        <div class="projects">
+            <h2>Projects</h2>
+            <h3>Pulsed Raspberry Pi Laser using a 3D printed chopper</h3>
+            <p>(Coming soon)</p>
+            <h3>Biodigester</h3>
+            <p>(Coming soon<)/p>
+            <h3>Machine Learning model to detect swimming pools in my area through satellite imagery</h3>
+            <p>(Coming soon<)/p>
+
+            <!-- Add your projects here -->
+        </div>
+    </div>
+    <div class="section" id="section6">
+    <div class="contact-me">
+        <h2>Contact Me</h2>
+        <form>
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-field full-width">
+                        <label for="message">Write your Message here</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
-
-
 
 
 

@@ -246,6 +246,32 @@ button:hover {
 
 /* Media query for mobile devices */
 @media (max-width: 768px) {
+    .about-me {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .timeline {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .timeline-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .skills-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
     .form-row {
         flex-direction: column;
     }
@@ -254,5 +280,6 @@ button:hover {
         width: 100%;
     }
 }
+
 
 
